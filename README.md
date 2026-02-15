@@ -1,107 +1,86 @@
-MiniWare OS is a simple Command-Line Based Operating System Simulation written in C language for B.Tech Operating System project. It demonstrates basic OS concepts such as Process Management, File System Handling, and Shell Command Execution in a beginner-friendly way.
+🖥️ MiniWare Operating System
 
-Features
+MiniWare OS is a Command-Line Based Operating System Simulation written in C for B.Tech OS Project.
+It demonstrates core OS concepts like Process Management, File System, and Shell Commands in a simple and interactive way.
 
-Boot Animation (OS startup simulation)
+✨ Features
 
-Background Processes Simulation (init, kworker, shell, networkd)
+🔹 Boot Animation (Kernel Startup Simulation)
 
-Process Viewer (ps command)
+🔹 Background Process Simulation (init, kworker, shell, networkd)
 
-In-Memory File System
+🔹 Process Viewer (ps)
 
-Create and Read Files
+🔹 In-Memory File System
 
-Date & Time Display
+🔹 Create, Read & List Files
 
-Colored Terminal Output
+🔹 Date & Time Command
 
-Interactive Shell Interface
+🔹 Colored Terminal Output
 
-Reboot and Shutdown Simulation
+🔹 Interactive Shell Interface
 
-Technologies Used
+🔹 Reboot & Shutdown Simulation
 
-C Programming Language
 
-Standard Libraries (stdio.h, stdlib.h, string.h, time.h)
+🛠️ Tech Stack
+    *Language: C
+    *Libraries: stdio.h, stdlib.h, string.h, time.h
+    *System API: windows.h
+    
 
-Windows API (windows.h)
+💻 Supported Commands
 
-Supported Commands
-Command	Description
-help	Show all available commands
-clear	Clear the screen
-ps	Display running processes
-date	Show current date & time
-createfile <name>	Create a new file
-listfiles	List all files
-cat <name>	Show file content
-reboot	Restart MiniWare OS
-exit	Shutdown the system
-Project Structure
+Command	          Description
+help	            Show available commands
+clear	            Clear screen
+ps	              Show running processes
+date	            Show current date & time
+createfile <name>	Create file
+listfiles       	List all files
+cat <name>	      View file content
+reboot	          Restart OS
+exit	            Shutdown system
 
-MiniWare OS uses:
+🧠 System Design
+   MiniWare OS simulates:
 
-Process Table → Stores running processes (PID, Name, Status)
+  *Process Table → Stores PID, Name, Status
+  *Memory File System → Stores files in RAM
+  *Command Interpreter (Shell) → Executes user commands
+  *Boot Loader Simulation → Displays OS startup.
 
-In-Memory File System → Stores files in RAM (Filename + Content)
-
-Command Interpreter (Shell) → Reads and executes user commands
-
-Boot Loader Simulation → Displays startup animation
-
-How to Run
-Step 1: Compile
+  ▶️ How to Run
+Compile
+bash
 gcc miniware.c -o miniware
 
-Step 2: Run
-./miniware
+Run
+bash
+miniware
+⚠️ Works on Windows only (uses windows.h)
 
+🎯 Learning Outcomes
 
-Note: This project is designed for Windows because it uses windows.h.
+*Operating System Basics
+*Process Management
+*File System Working
+*CLI (Command Line Interface)
+*Shell Command Parsing
+*Memory Storage Simulation
 
-Sample Output
-MiniWare Operating System v1.0
-Booting kernel...
-Initializing memory... OK
-Mounting filesystem... OK
-Starting services... OK
+🚀 Future Improvements
 
-root@MiniWare:~# help
+*File Delete & Edit Command
+*Process Kill (kill <pid>)
+*CPU Scheduling (FCFS / Round Robin)
+*Virtual Memory Simulation
+*User Login System
+*Linux Version (No windows.h)
+*GUI Version
 
-Learning Outcomes
-
-This project helps understand:
-
-Basic Operating System Working
-
-Process Management Concept
-
-File System Simulation
-
-Command Line Interface (CLI)
-
-Memory-based Storage
-
-Shell Command Parsing
-
-Future Improvements
-
-File Delete & Edit Feature
-
-Process Kill Command
-
-CPU Scheduling Simulation (FCFS / Round Robin)
-
-Virtual Memory Simulation
-
-User Login System
-
-GUI Version (Optional)
-
-Author
+👨‍💻 Author
 
 Harsh Kumar
-B.Tech Computer Science Engineering
-Operating System Project
+B.Tech CSE — Operating System Project
